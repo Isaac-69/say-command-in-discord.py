@@ -2,7 +2,7 @@
 import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix = '!')
+bot = commands.Bot(command_prefix = ['!'])
 """here what the allowed_mentions will do is prevent @everyone ping and @roles ping.  
 This is very helpful to prevent raids!"""
 
@@ -10,7 +10,7 @@ This is very helpful to prevent raids!"""
 
 @bot.event
 async def on_ready():
-    print('https://github.com/Isaac-69/say-command-in-discord.py') #you can remove this line lol
+    print('https://github.com/Isaac-69/say-command-in-discord.py.git') #you can remove this line lol
     print(f"{bot.user} is alive")
 
 #creating the say cmd
